@@ -9,10 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBOutlet var questionLabel: UILabel!
+    @IBOutlet var answerLabel: UILabel!
         // Do any additional setup after loading the view.
-    }
+    
 
 
 }
