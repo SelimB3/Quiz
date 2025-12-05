@@ -26,11 +26,17 @@
                                 <rect key="frame" x="140.5" y="138" width="133" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next Question"/>
+                                <connections>
+                                    <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="83W-4U-FMb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeL-wr-1bl">
                                 <rect key="frame" x="143.5" y="363" width="127" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show Answer"/>
+                                <connections>
+                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lPp-8i-Ko1"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5v-I9-Jj9">
                                 <rect key="frame" x="194.5" y="109" width="25" height="21"/>
@@ -52,6 +58,10 @@
                             <constraint firstItem="fyt-el-HGt" firstAttribute="top" secondItem="t5v-I9-Jj9" secondAttribute="bottom" constant="8" symbolic="YES" id="oWg-WH-dV5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="Ib9-Lg-aUJ" id="mJ7-st-wrl"/>
+                        <outlet property="questionLabel" destination="t5v-I9-Jj9" id="AeC-ga-usf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
